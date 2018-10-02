@@ -1,13 +1,2 @@
 tenets:
-  - name: find-funcs
-    doc: Example tenet that finds all functions.
-    flows:
-      codelingo/review:
-        comments: "this is a func :/"
-    query: |
-      import codelingo/ast/go
-
-      @ review.comment
-      go.func_decl(depth = any):
-        go.ident:
-          name == "main"
+  - import: codelingo/go
