@@ -1,5 +1,5 @@
 package main
 
-func name() {
+func main() {
 
 }
